@@ -1,0 +1,15 @@
+<form class="col-md-12">
+  <div class="form-group col-md-6">
+    <label for="persona">Persona</label>
+    <input type="text" name="persona" class="form-control" ng-model="newHero.persona" placeholder="Persona"/>
+  </div>
+  <div class="form-group col-md-6">
+    <label for="alias">Alias</label>
+    <input type="text" name="alias" class="form-control" ng-model="newHero.alias" placeholder="Alias"/>
+  </div>
+  <div class="form-group col-md-6">
+    <label for="power_id">Power ID</label>
+    <input type="text" name="power_id" class="form-control" ng-model="newHero.power_id" placeholder="Power ID"/>
+  </div>
+  <button type="submit" name="submit" ng-click="entry.createHero(newHero)">Submit</button>
+</form>

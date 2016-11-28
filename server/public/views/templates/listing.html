@@ -1,0 +1,17 @@
+<table>
+  <thead>
+    <tr>
+      <th>Persona</th>
+      <th>Alias</th>
+      <th>Power Description</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr class="hero" ng-repeat="hero in listing.listing">
+      <td><input type="text" name="persona" ng-model="hero.persona" class="form-control col-md-4"></td>
+      <td><input type="text" name="alias" ng-model="hero.alias" class="form-control col-md-4"></td>
+      <td><input type="text" name="description" ng-model="hero.description" class="form-control col-md-4"></td>
+      <td><button type="delete" name="delete" ng-click="listing.deleteHero(hero)">Delete</button></td>
+    </tr>
+  </tbody>
+</table>
